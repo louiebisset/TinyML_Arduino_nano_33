@@ -1,1 +1,17 @@
-The 
+## Overview
+
+This project explores using a camera with the Arduino Nano 33 BLE, with
+the aim of capturing image data and transferring it to a computer for
+processing.
+
+## Hardware
+
+- Arduino Nano 33 BLE
+- Camera module OV7675
+- Tiny Machine Learning Shield
+
+## Software
+
+- Arduino IDE
+- C++
+- Python
