@@ -1,6 +1,6 @@
 import serial, numpy as np, cv2, time
 
-PORT = "COM15"          # Linux: /dev/ttyACM0   Mac: /dev/cu.usbmodemXXXX
+PORT = "COM15"          
 W, H = 176, 144
 
 ser = serial.Serial(PORT, 1000000, timeout=1)
@@ -16,7 +16,7 @@ while True:
                                     interpolation=cv2.INTER_NEAREST))
     key = cv2.waitKey(1) & 0xFF
     if key == ord("s"):                      # save a frame
-        cv2.imwrite(f"sign_{count:04d}.png", img)
+        cv2.imwrite(f"openhand_{count:04d}.png", img)
         count += 1
         print("saved", count)
     elif key == ord("q"):
