@@ -16,7 +16,7 @@ while True:
                                     interpolation=cv2.INTER_NEAREST))
     key = cv2.waitKey(1) & 0xFF
     if key == ord("s"):                      # save a frame
-        cv2.imwrite(f"openhand_{count:04d}.png", img)
+        cv2.imwrite(f"Peace_{count:04d}.png", img)
         count += 1
         print("saved", count)
     elif key == ord("q"):
